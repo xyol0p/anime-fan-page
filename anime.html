@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Fan Page - Luffy Vibes</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Segoe UI', sans-serif;
+    }
+    body {
+      background: linear-gradient(to right, #0f0c29, #302b63, #24243e);
+      color: #fff;
+      text-align: center;
+      padding: 40px 20px;
+    }
+    h1 {
+      font-size: 3rem;
+      margin-bottom: 10px;
+    }
+    h2 {
+      color: #ff4081;
+      font-weight: 400;
+    }
+    img {
+      width: 200px;
+      height: 200px;
+      border-radius: 50%;
+      margin-top: 20px;
+      border: 5px solid #ff4081;
+      transition: transform 0.3s ease;
+      object-fit: cover;
+    }
+    img:hover {
+      transform: scale(1.1);
+    }
+    p {
+      max-width: 600px;
+      margin: 20px auto;
+      line-height: 1.6;
+      font-size: 1.1rem;
+    }
+    button {
+      background-color: #ff4081;
+      color: white;
+      border: none;
+      padding: 12px 25px;
+      margin-top: 20px;
+      font-size: 1rem;
+      border-radius: 30px;
+      cursor: pointer;
+      transition: background 0.3s ease;
+    }
+    button:hover {
+      background-color: #ff79a5;
+    }
+    .message {
+      margin-top: 20px;
+      font-size: 1.2rem;
+      color: #0ff;
+      display: none;
+    }
+  </style>
+</head>
+<body>
+  <h1>Luffy Vibes Fan Page</h1>
+  <h2>💥 The Coolest Pirate Ever 💥</h2>
+
+  <!-- 👇 Use your own image path here -->
+  <img src="Luffy icon.jpeg" alt="Luffy Cool Pic">
+
+  <p>This fan page is dedicated to Monkey D. Luffy, the one and only Pirate King in the making! 😎🍖</p>
+
+  <button onclick="showLove()">Join the Straw Hat Crew ❤️</button>
+  <div class="message" id="loveMessage">You're now part of the Nakama! ☠️</div>
+
+  <script>
+    function showLove() {
+      const msg = document.getElementById('loveMessage');
+      msg.style.display = 'block';
+    }
+  </script>
+</body>
+</html>
